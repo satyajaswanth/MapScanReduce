@@ -1,0 +1,10 @@
+java.io.IOException: Inconsistent checkpoint fields.
+LV = -63 namespaceID = 1215832146 cTime = 0 ; clusterId = CID-a418558f-6862-4acd-b662-2872d9b7f027 ; blockpoolId = BP-1461321755-127.0.1.1-1544436326021.
+Expecting respectively: -63; 1186792586; 0; CID-d313d7a6-3090-4e9b-b1df-790538ddc1f5; BP-1684751155-127.0.1.1-1544435497009.
+	at org.apache.hadoop.hdfs.server.namenode.CheckpointSignature.validateStorageInfo(CheckpointSignature.java:143)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:531)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
